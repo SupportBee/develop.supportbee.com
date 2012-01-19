@@ -1,0 +1,74 @@
+---
+layout: default
+title: Users API
+description: API to retrieve agents and user info
+categories: users
+---
+
+Users API
+=========
+
+### Retrieve Confirmed Agents of a company
+
+#### GET /users.json
+
+*Retrieves all confirmed agents of the company*
+
+#### Status Codes
+
+Success: 200
+
+#### Example
+
+GET /users.json
+
+````
+{
+  "users":[
+    {
+      "id":1,
+      "email":"person2@example.com",
+      "name":"Agent,1",
+      "agent":true,
+      "picture":{
+        "thumb20":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=20",
+        "thumb24":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=24",
+        "thumb32":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=32",
+        "thumb48":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=48",
+        "thumb64":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=64",
+        "thumb128":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=128"
+      }
+    }
+  ]
+}
+````
+
+### Retrieve info about a specific User
+
+#### GET /users/:id
+
+*Retrieves info about the user with id _id_*
+
+#### Example
+
+GET /users/1.json
+
+````
+{
+  "user":{
+    "id":1,
+    "email":"person2@example.com",
+    "name":"Agent,1",
+    "agent":true,
+    "picture":{
+      "thumb20":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=20",
+      "thumb24":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=24",
+      "thumb32":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=32",
+      "thumb48":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=48",
+      "thumb64":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=64",
+      "thumb128":"https://secure.gravatar.com/avatar/be27d979489e5ff5f6f503442c9d349b.png?r=PG&s=128"
+    }
+  }
+}
+````
+
