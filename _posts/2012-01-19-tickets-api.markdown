@@ -14,7 +14,7 @@ Tickets API
 
 *returns 15 tickets of the company in the order of their last activity*
 
-#### Error Codes
+#### Status Codes
 
 Success: 200
 
