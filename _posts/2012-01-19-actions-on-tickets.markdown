@@ -5,7 +5,7 @@ description: Describes the Actions on a ticket
 categories: tickets
 ---
 
-Archiving / Unarchiving Tickets
+Archiving / Un-Archiving Tickets
 ===============================
 
 ### Archiving Tickets
@@ -25,7 +25,7 @@ POST /tickets/1/archive.json
 
 Response is Success with no body
 
-### Unrchiving Tickets
+### Un-Archiving Tickets
 
 #### DELETE /tickets/_ticket\_id_/archive.json
 *Un-archives an archived ticket*

@@ -314,7 +314,7 @@ GET /tickets.json?per_page=10&query=SupportBee
 
 *Creates a ticket for the company*
 
-#### Error Codes
+#### Status Codes
 
 Success: 201
 
