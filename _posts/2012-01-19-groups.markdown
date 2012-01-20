@@ -1,0 +1,39 @@
+---
+layout: default
+title: Groups API
+description: Retrieving Groups of a company
+categories: tickets
+---
+
+### Retrieving Groups of a Company
+
+#### GET /groups.json
+*Retrieves all the groups of the company*
+
+#### Parameters
+
+*with_users*
+
+If _true_, retrieves only the groups with users in them
+
+#### Example
+
+GET /groups.json
+
+````
+{
+  "groups":[
+    {
+      "id":1,
+      "name":"Group 1",
+      "picture":{
+        "thumb20":"/images/groups/speech-balloon-orange-g20.png",
+        "thumb24":"/images/groups/speech-balloon-orange-g24.png",
+        "thumb32":"/images/groups/speech-balloon-orange-g32.png",
+        "thumb48":"/images/groups/speech-balloon-orange-g48.png",
+        "thumb256":"/images/groups/speech-balloon-orange-g256.png"
+      }
+    }
+  ]
+}
+````
