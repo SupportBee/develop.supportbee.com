@@ -213,3 +213,40 @@ DELETE /tickets/1/spam.json
 
 Response is Success with no body
 
+Trashing / Un-Trashing Tickets
+===============================
+
+### Trashing Tickets
+
+#### POST /tickets/_ticket\_id_/trash.json
+*Trashes' an un-trashed ticket*
+
+#### Status Codes
+
+Success: 204
+
+Failure: 500
+
+#### Example
+
+POST /tickets/1/trash.json
+
+Response is Success with no body
+
+### Un-Trashing Tickets
+
+#### DELETE /tickets/_ticket\_id_/trash.json
+*Un-trashes' a trashed ticket*
+
+#### Status Codes
+
+Success: 204
+
+Failure: 500
+
+#### Example
+
+DELETE /tickets/1/trash.json
+
+Response is Success with no body
+

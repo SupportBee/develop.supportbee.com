@@ -42,6 +42,12 @@ If _true_, retrieved tickets contain tickets marked as spam.
 
 Defaults to false
 
+**trash (optional)**
+
+If _true_, retrieved tickets contain tickets that are trashed.
+
+Defaults to false
+
 **replies (optional)**
 
 If _true_, retrieved tickets contain only tickets with replies.
